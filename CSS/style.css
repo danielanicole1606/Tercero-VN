@@ -1,0 +1,55 @@
+/*div.area_trabajo{
+	background:#red;
+	height:520px;
+	width:10%;*/
+/*}*/
+h1.title{
+	color:white;
+	font-family:'Times New Roman';
+
+}
+/*div.area_trabajo li{
+	margin-top:2px;
+	list-style:none;
+	background:#292b2c  ;
+	padding:9px;
+	border-radius:2px;
+	width:120px;
+	height:35px;
+	border-right:-5px;
+	margin-left:-6px;
+	transition-property:margin-left;
+}
+div.area_trabajo a{
+	text-decoration:none;
+	color:#0a7bc4;
+	font-size:15px;
+	font-family:'Times New Roman';
+}
+div.area_trabajo ul{
+	margin-left:-30px
+}
+div.area_trabajo li:hover{
+	background:#011627;
+	border: solid;
+	width: 120px;
+	margin-left: 5px;
+}
+div.area_trabajo a:hover{
+	color: #000;
+}
+div.icon_whatsapp{
+	color:#00bb2d;
+	border-top:solid 1px #9b9b9b;
+}
+div.icon_facebook{
+	color:#3b5998 ;
+	border-top:solid 1px #9b9b9b;
+}
+div.icon_instagram{
+	color:#3f729b ;
+	border-top:solid 1px #9b9b9b;
+}*/
+div.logo{
+	margin-top:5px;
+}

@@ -1,0 +1,63 @@
+<!-- DANIELA VINUEZA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DANIELA VINUEZA</title>
+	<!-- BOOTSTRAP -->
+	 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" rel="stylesheet">
+	 <!-- ARCHIVOS CSS -->
+	 <link href="CSS/style.css" rel="stylesheet"></link>
+	 <!-- ARCHIVOS JS --> 
+     <script type="text/javascript" src="JS/jquery-3.5.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	 <script type="text/javascript" src="JS/funciones.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row bg-dark">
+			<div class="col-md-1 logo">
+			<img src="img/125.jpg" width="45px">
+                    </img>
+                </div>
+                <div class="col-md-9 text-center">
+                    <h1 class="title">
+                        REGISTRO
+                    </h1>
+                </div>
+            </div>	
+            <div class="row area_trabajo">
+            	<div class="col-md-10">
+            		<div class="row">
+            			<div class="col-md-4">
+            			<label for="">Apellidos <i class="text-danger">*</i> <small class="text-muted" id="msj_apellidos">min 6 caracteres</small></label>
+            			<input type="text" id="apellidos" name="apellidos" placeholder="Ej: Vinueza Anacleto" class="form-control">
+            		</div>
+            </div>
+            <div class="row">
+            			<div class="col-md-4">
+            			<label for="">Nombres <i class="text-danger">*</i> <small class="text-muted" id="msj_nombres">min 6 caracteres</small></label>
+            			<input type="text" id="nombres" name="nombres" placeholder="Ej: Daniela Nicole" class="form-control">
+            		</div>
+            </div>
+            <div class="row">
+            			<div class="col-md-4">
+            			<label for="">Telefono <i class="text-danger">*</i> <small class="text-muted" id="msj_telefono">min 10 caracteres</small></label>
+            			<input type="text" id="telefono" name="telefono" placeholder="Ej: 0990328355" class="form-control">
+            		</div>
+            		</div>
+            <div class="row">
+            			<div class="col-md-4">
+            			<label for="">Correo <i class="text-danger">*</i> <small class="text-muted" id="msj_correo">min 16 caracteres</small></label>
+            			<input type="text" id="correo" name="correo" placeholder="Ej: danielanicole525@gmail.com" class="form-control">
+            		</div>
+            </div>
+            <div class="row">
+            	<div class="col-md-4 mt-3">
+            	<button class="btn btn-success btn-block" id="btn_registrar">Registrar</button>
+            </div>
+            </div>
+	
+</body>
+</html>

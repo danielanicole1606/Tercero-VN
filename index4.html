@@ -1,0 +1,41 @@
+<!-- DANIELA VINUEZA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" rel="stylesheet">
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+	<title>Daniela Vinueza</title>
+</head>
+<body style="background:#fff">
+	<h1>SUMA DE DOS NÚMEROS</h1>
+		<div class="row area_trabajo">
+			<div class="col-md-4" style="background:#FFEECF ">
+			<label>Ingrese el primer valor:</label>
+			<input type="text" placeholder="Escriba un numero" class="form-control" id="Num1" style="background:#fff">
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="col-md-4" style="background:#FFEECF ">
+			<label>Ingrese el segundo valor:</label>
+			<input type="text" placeholder="Escriba un numero" class="form-control" id="Num2" style="background:#fff ">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1" style="background:#fff">
+			<input type="button" name="name" value="Resultado" onclick="Pluss();">
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+function Pluss(){
+	var Numero1=parseInt(document.getElementById('Num1').value);
+	var Numero2=parseInt(document.getElementById('Num2').value);
+	var Resultado=Numero1+Numero2;
+	alert("El resultado de la suma es: " +Resultado);
+}
+</script>
+</html>
