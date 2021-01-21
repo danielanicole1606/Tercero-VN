@@ -38,14 +38,19 @@ $(document).on("click","#btn_registrar",()=>{
     }
     let terminos=$('#terminos');
     if( $(terminos).prop('checked')==false){
-    	alert("Debe aceptar los términos y condiciones");
-    	return false;
+        alerta('error','Debe aceptar los términos','Alerta',true,'center',0);
+        return false;
     }
-    alert("Datos correctos");
-// 	Swal.fire({
-//     icon: 'success',
-//     title: 'Registro completo',
-//     text: 'Datos correctamente ingresados',
-// })
-
+    alerta('success','Datos registrados correctamente','Proceso correcto',false,'bottom-end',2000);
 })
+const alerta=(icon,text,title,showConfirmButton,position,timer)=>{
+Swal.fire({
+    icon: icon,
+    text: text,
+    title: title,
+    position:position,
+    showConfirmButton:showConfirmButton ,
+    timer: timer,
+    
+})
+}
