@@ -1,3 +1,22 @@
+$(function(){ //cuando se cargue la pagina
+    let c=0;
+    let row="";
+    datos.map( (fila)=> {
+        c++;
+    row+=`<tr> 
+            <td>${c}</td> 
+             <td>${fila.apellidos }</td> 
+             <td>${fila.nombres }</td> 
+             <td>${fila.cedula }</td> 
+             <td>${fila.correo }</td> 
+             <td>${fila.ciudad }</td> 
+             <td>${fila.sexo }</td> 
+          </tr>`;
+    });
+    $("#tbody_datos").html(row);
+
+})
+
 $(document).on("click","#btn_registrar",()=>{
 	let ap=$('#apellidos').val();
 	let nm=$('#nombres').val();
@@ -54,3 +73,24 @@ Swal.fire({
     
 })
 }
+const datos=[
+    {apellidos:'Vinueza', nombres:'Daniela', cedula:'1710241926', correo:'danielav@gmail.com',
+     ciudad:'Quito', sexo:'Mujer'},
+    {apellidos:'Andrade', nombres:'Camila', cedula:'1794247702', correo:'andradecm@gmail.com',
+     ciudad:'Quito', sexo:'Mujer'},
+    {apellidos:'Lopez', nombres:'Elena', cedula:'1708891206', correo:'lpzelena@gmail.com',
+     ciudad:'Cuenca', sexo:'Mujer'},
+    {apellidos:'Jaramillo', nombres:'Pablo', cedula:'1700931856', correo:'pabjm@gmail.com',
+     ciudad:'Guayaquil', sexo:'Hombre'},
+    {apellidos:'Gutierrez', nombres:'Luis', cedula:'1702551606', correo:'gutluis@gmail.com',
+     ciudad:'Cuenca', sexo:'Hombre'},
+    {apellidos:'Gonzalez', nombres:'Ismael', cedula:'1722031121', correo:'ismaelgn@gmail.com',
+     ciudad:'Quito', sexo:'Hombre'},
+    {apellidos:'Arcos', nombres:'Adriana', cedula:'1794708542', correo:'adriarcos2v@gmail.com',
+     ciudad:'Guayaquil', sexo:'Mujer'},
+    {apellidos:'Rivera', nombres:'Cristian', cedula:'1719008155', correo:'crisriv6@gmail.com',
+     ciudad:'Guayaquil', sexo:'Hombre'},
+    {apellidos:'Medina', nombres:'Israel', cedula:'1797235217', correo:'medinais@gmail.com',
+     ciudad:'Quito', sexo:'Hombre'}
+
+];
